@@ -45,16 +45,32 @@ public class Operadores {
 		System.out.println(concatenacao);
 
 		//operadores unarios
-		
+	
 		int numero = 5;
 		System.out.println(- numero);
 		numero ++;
 		System.out.println(numero);
 		System.out.println(numero ++);
-		System.out.println(numero);//
+		System.out.println(numero); //o operador da linha anterior foi jogado para esta linha
 		System.out.println(++ numero);
 		boolean verdadeiro = true;
 		System.out.println("Inverteu " + !verdadeiro);
+		
+		//operadores ternarios
+		
+		int a, b;
+		a = 5;
+		b = 6;
+		String resultado2 = (a==b) ? "verdadeiro" : "false";
+		System.out.println(resultado2);
+		// EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
+		if(a==b)
+		   resultado2 = "verdadeiro";
+		else
+		   resultado2 = "falso";
+		System.out.println(resultado2);
+		
+		
 	}
 
 }
