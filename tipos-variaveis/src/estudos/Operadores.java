@@ -82,6 +82,27 @@ public class Operadores {
 			System.out.println("Numero 1 menor ou igual que numero 2");
 		if(numero1 != numero2)
 			System.out.println("Numero 1 diferente de numero 2");
+		System.out.println();
+		
+		
+		System.out.println("Operadores Logicos");
+		boolean condicao1=true;
+		boolean condicao2=false;
+		
+		// "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+		if(condicao1 && condicao2)
+			System.out.print("Os dois valores precisam ser verdadeiros");
+		//Se condicao1 OU condicao2 for verdadeira, executar código.
+		if(condicao1 || condicao2)
+			System.out.print("Um dos valores precisa ser verdadeiro");
+		
+	
+
+
+		
+		
+		
+		
 		
 	}
 

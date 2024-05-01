@@ -35,5 +35,16 @@ public class ComparacaoAvancada {
 		Qual a solução ?
 		Quando queremos comparar objetos, usamos o método equals */
 		System.out.println(num1.equals(num2));
+		
+		//OPERADOR & ABREVIADO
+		System.out.println("Operador Abreviado");
+		int numeroUm = 1;
+		int numeroDois= 2;
+
+		if(numeroUm== 2 & numeroDois ++ == 2 )
+		    System.out.println("As 2 condições são verdadeiras");
+
+		System.out.println("O numero 1 agora e " + numeroUm);
+		System.out.println("O numero 2 agora e " + numeroDois);
 	}
 }
