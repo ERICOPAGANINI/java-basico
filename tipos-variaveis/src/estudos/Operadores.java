@@ -5,7 +5,6 @@ import java.util.Date;
 public class Operadores {
 
 	public static void main(String[] args) {
-		//operador de atribuição
 		String nome = "GLEYSON";
 		int idade = 22;
 		double peso = 68.5;
@@ -13,9 +12,9 @@ public class Operadores {
 		boolean doadorOrgao = false;
 		Date dataNascimento = new Date();
 		System.out.println(dataNascimento);
-		
-		//aritiméticos	
-		
+		System.out.println();
+			
+		System.out.println("Operadores Artiméticos");
 		double soma = 10.5 + 15.7;
 		int subtração = 113 - 25;
 		int multiplicacao = 20 * 7;
@@ -23,14 +22,12 @@ public class Operadores {
 		int modulo = 18 % 3;
 		double resultado = (10 * 7) + (20/4);
 		System.out.println(modulo);
-		
 		//ATENÇÃO! O operador de adição (+), quando utilizado em variáveis do tipo texto, realizará a “concatenação de textos”.
-
 		String nomeCompleto = "LINGUAGEM" + "JAVA";
 		System.out.println(nomeCompleto);
+		System.out.println();
 		
-		//concatenação
-		
+		System.out.println("Concatenação0");
 		String concatenacao ="?"; 
 		System.out.println(concatenacao);
 		concatenacao = 1+1+1+"1";
@@ -43,9 +40,9 @@ public class Operadores {
 		System.out.println(concatenacao);
 		concatenacao = "1"+(1+1+1);
 		System.out.println(concatenacao);
-
-		//operadores unarios
-	
+		System.out.println();
+		
+		System.out.println("Operadores Unários");
 		int numero = 5;
 		System.out.println(- numero);
 		numero ++;
@@ -55,9 +52,9 @@ public class Operadores {
 		System.out.println(++ numero);
 		boolean verdadeiro = true;
 		System.out.println("Inverteu " + !verdadeiro);
+		System.out.println();
 		
-		//operadores ternarios
-		
+		System.out.println("Operadores Ternários");
 		int a, b;
 		a = 5;
 		b = 6;
@@ -69,7 +66,22 @@ public class Operadores {
 		else
 		   resultado2 = "falso";
 		System.out.println(resultado2);
+		System.out.println();
 		
+		
+		System.out.println("Operadores Relacioanais");
+		int numero1 = 1;
+		int numero2 = 2;
+		if(numero1 > numero2)
+			System.out.println("Numero 1 maior que numero 2");
+		if(numero1 < numero2)
+			System.out.println("Numero 1 menor que numero 2");
+		if(numero1 >= numero2)
+			System.out.println("Numero 1 maior ou igual que numero 2");
+		if(numero1 <= numero2)
+			System.out.println("Numero 1 menor ou igual que numero 2");
+		if(numero1 != numero2)
+			System.out.println("Numero 1 diferente de numero 2");
 		
 	}
 
