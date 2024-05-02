@@ -1,4 +1,5 @@
 
+
 public class Usuario {
 
 	public static void main(String[] args) {
@@ -24,7 +25,6 @@ public class Usuario {
 		
 		smartTv.mudarCanalEscifico(230);
 		System.out.println("Canal atual: "+ smartTv.canal);
-
 	}
 
 }
