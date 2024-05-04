@@ -1,4 +1,4 @@
-package estudos;
+
 
 public class TiposVariaveis {
 
