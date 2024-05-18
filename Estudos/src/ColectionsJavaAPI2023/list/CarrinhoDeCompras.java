@@ -15,16 +15,16 @@ public class CarrinhoDeCompras {
 		itensCarrinho.add(new Item(nome, preco, quantidade));
 	}
 	
-	public void removerItem(String nome) {
+	public List<Item> removerItem(String nome) {
 		List<Item> itensARemover = new ArrayList<>();
 		
 		for(Item i :itensCarrinho) {
-			if(i.getNome().equalsIgnoreCase(nome)) {
+			if(i.getNome().equals(nome)) {
+				itensCarrinho.remove(i);
 				itensARemover.add(i);
 			}
-			itensCarrinho.removeAll(itensARemover);
 		}
-		
+		return itensARemover;
 	}
 	
 	public Double calcularValorTotal() {
