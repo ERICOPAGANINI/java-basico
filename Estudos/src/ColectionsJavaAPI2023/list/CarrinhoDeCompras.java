@@ -24,6 +24,7 @@ public class CarrinhoDeCompras {
 				itensARemover.add(i);
 			}
 		}
+		itensCarrinho.removeAll(itensARemover);
 		return itensARemover;
 	}
 	
