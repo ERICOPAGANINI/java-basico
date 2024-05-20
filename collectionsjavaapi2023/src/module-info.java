@@ -1,0 +1,2 @@
+module collectionsjavaapi2023 {
+}

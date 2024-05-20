@@ -42,8 +42,8 @@ public class Main {
 		 * System.out.println(
 		 * "--------------------------------------------------------------------");
 		 * 
-		 * // Criando uma instância do catálogo de livros CatalogoLivros catalogoLivros
-		 * = new CatalogoLivros();
+		 * // Criando uma instância do catálogo de livros 
+		 * CatalogoLivros catalogoLivros = new CatalogoLivros();
 		 * 
 		 * // Adicionando livros ao catálogo
 		 * catalogoLivros.adicionarLivro("Microsserviços Prontos Para a Produção",
@@ -63,25 +63,36 @@ public class Main {
 		 * pesquisaPorTitulo("Java Guia do Programador"));
 		 * System.out.println(catalogoLivros.pesquisaPorTitulo("Título Inexistente"));
 		 */
+
+		/*
+		 * Criando uma instância da classe OrdenacaoPessoas OrdenacaoPessoas
+		 * ordenacaoPessoas = new OrdenacaoPessoas();
+		 * 
+		 * // Adicionando pessoas à lista ordenacaoPessoas.adicionarPessoa("Alice", 20,
+		 * 1.56); ordenacaoPessoas.adicionarPessoa("Bob", 30, 1.80);
+		 * ordenacaoPessoas.adicionarPessoa("Charlie", 25, 1.70);
+		 * ordenacaoPessoas.adicionarPessoa("David", 17, 1.56);
+		 * 
+		 * // Exibindo a lista de pessoas adicionadas
+		 * System.out.println(ordenacaoPessoas.pessoaList);
+		 * 
+		 * // Ordenando e exibindo por idade
+		 * System.out.println(ordenacaoPessoas.ordenarPorIdade());
+		 * 
+		 * // Ordenando e exibindo por altura
+		 * System.out.println(ordenacaoPessoas.ordenarPorAltura());
+		 */
 		
-		 // Criando uma instância da classe OrdenacaoPessoas
-	    OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
-
-	    // Adicionando pessoas à lista
-	    ordenacaoPessoas.adicionarPessoa("Alice", 20, 1.56);
-	    ordenacaoPessoas.adicionarPessoa("Bob", 30, 1.80);
-	    ordenacaoPessoas.adicionarPessoa("Charlie", 25, 1.70);
-	    ordenacaoPessoas.adicionarPessoa("David", 17, 1.56);
-
-	    // Exibindo a lista de pessoas adicionadas
-	    System.out.println(ordenacaoPessoas.pessoaList);
-
-	    // Ordenando e exibindo por idade
-	    System.out.println(ordenacaoPessoas.ordenarPorIdade());
-
-	    // Ordenando e exibindo por altura
-	    System.out.println(ordenacaoPessoas.ordenarPorAltura());
-
+		ConjuntoConvidados listaConvidados = new ConjuntoConvidados();
+		System.out.println("Exitem " + listaConvidados.contarConvidados()+" dentro do SET de Convidados");
+		listaConvidados.adicionarConvidado("Convidado 1", 1234);
+		listaConvidados.adicionarConvidado("Convidado 2", 1235);
+		listaConvidados.adicionarConvidado("Convidado 3", 1235);
+		listaConvidados.adicionarConvidado("Convidado 4", 1237);
+		listaConvidados.exibirConvidados();
+		listaConvidados.removerConvidadoPorCodigoConvite(1234);
+		listaConvidados.exibirConvidados();
+		System.out.println(listaConvidados.contarConvidados());
 	}
 
 }
