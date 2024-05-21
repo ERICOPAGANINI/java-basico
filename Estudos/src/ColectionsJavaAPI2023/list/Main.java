@@ -42,8 +42,8 @@ public class Main {
 		 * System.out.println(
 		 * "--------------------------------------------------------------------");
 		 * 
-		 * // Criando uma instância do catálogo de livros 
-		 * CatalogoLivros catalogoLivros = new CatalogoLivros();
+		 * // Criando uma instância do catálogo de livros CatalogoLivros catalogoLivros
+		 * = new CatalogoLivros();
 		 * 
 		 * // Adicionando livros ao catálogo
 		 * catalogoLivros.adicionarLivro("Microsserviços Prontos Para a Produção",
@@ -82,17 +82,36 @@ public class Main {
 		 * // Ordenando e exibindo por altura
 		 * System.out.println(ordenacaoPessoas.ordenarPorAltura());
 		 */
+
+		/*
+		 * ConjuntoConvidados listaConvidados = new ConjuntoConvidados();
+		 * System.out.println("Exitem " +
+		 * listaConvidados.contarConvidados()+" dentro do SET de Convidados");
+		 * listaConvidados.adicionarConvidado("Convidado 1", 1234);
+		 * listaConvidados.adicionarConvidado("Convidado 2", 1235);
+		 * listaConvidados.adicionarConvidado("Convidado 3", 1235);
+		 * listaConvidados.adicionarConvidado("Convidado 4", 1237);
+		 * listaConvidados.exibirConvidados();
+		 * listaConvidados.removerConvidadoPorCodigoConvite(1234);
+		 * listaConvidados.exibirConvidados();
+		 System.out.println(listaConvidados.contarConvidados());*/
 		
-		ConjuntoConvidados listaConvidados = new ConjuntoConvidados();
-		System.out.println("Exitem " + listaConvidados.contarConvidados()+" dentro do SET de Convidados");
-		listaConvidados.adicionarConvidado("Convidado 1", 1234);
-		listaConvidados.adicionarConvidado("Convidado 2", 1235);
-		listaConvidados.adicionarConvidado("Convidado 3", 1235);
-		listaConvidados.adicionarConvidado("Convidado 4", 1237);
-		listaConvidados.exibirConvidados();
-		listaConvidados.removerConvidadoPorCodigoConvite(1234);
-		listaConvidados.exibirConvidados();
-		System.out.println(listaConvidados.contarConvidados());
+		ConjuntoPalavrasUnicas listaPalavras = new ConjuntoPalavrasUnicas();
+		listaPalavras.adicionarPalavra("Palavra 1");
+		listaPalavras.adicionarPalavra("Palavra 2");
+		listaPalavras.adicionarPalavra("Palavra 3");
+		listaPalavras.adicionarPalavra("Palavra 4");
+		listaPalavras.adicionarPalavra("Palavra 4");
+		listaPalavras.adicionarPalavra("Palavra 5");
+		listaPalavras.adicionarPalavra("Palavra 6");
+		listaPalavras.exibirPalavrasUnicas();
+		listaPalavras.removerPalavra("Palavra 4");
+		listaPalavras.removerPalavra("Palavra 2");
+		listaPalavras.exibirPalavrasUnicas();
+		System.out.println(listaPalavras.verificarPalavra("Palavra 4"));
+		System.out.println(listaPalavras.verificarPalavra("Palavra 6"));
+
+		
 	}
 
 }
