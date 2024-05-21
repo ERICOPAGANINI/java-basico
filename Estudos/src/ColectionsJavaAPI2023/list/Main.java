@@ -94,24 +94,72 @@ public class Main {
 		 * listaConvidados.exibirConvidados();
 		 * listaConvidados.removerConvidadoPorCodigoConvite(1234);
 		 * listaConvidados.exibirConvidados();
-		 System.out.println(listaConvidados.contarConvidados());*/
-		
-		ConjuntoPalavrasUnicas listaPalavras = new ConjuntoPalavrasUnicas();
-		listaPalavras.adicionarPalavra("Palavra 1");
-		listaPalavras.adicionarPalavra("Palavra 2");
-		listaPalavras.adicionarPalavra("Palavra 3");
-		listaPalavras.adicionarPalavra("Palavra 4");
-		listaPalavras.adicionarPalavra("Palavra 4");
-		listaPalavras.adicionarPalavra("Palavra 5");
-		listaPalavras.adicionarPalavra("Palavra 6");
-		listaPalavras.exibirPalavrasUnicas();
-		listaPalavras.removerPalavra("Palavra 4");
-		listaPalavras.removerPalavra("Palavra 2");
-		listaPalavras.exibirPalavrasUnicas();
-		System.out.println(listaPalavras.verificarPalavra("Palavra 4"));
-		System.out.println(listaPalavras.verificarPalavra("Palavra 6"));
+		 * System.out.println(listaConvidados.contarConvidados());
+		 */
 
+		/*
+		 * ConjuntoPalavrasUnicas listaPalavras = new ConjuntoPalavrasUnicas();
+		 * listaPalavras.adicionarPalavra("Palavra 1");
+		 * listaPalavras.adicionarPalavra("Palavra 2");
+		 * listaPalavras.adicionarPalavra("Palavra 3");
+		 * listaPalavras.adicionarPalavra("Palavra 4");
+		 * listaPalavras.adicionarPalavra("Palavra 4");
+		 * listaPalavras.adicionarPalavra("Palavra 5");
+		 * listaPalavras.adicionarPalavra("Palavra 6");
+		 * listaPalavras.exibirPalavrasUnicas();
+		 * listaPalavras.removerPalavra("Palavra 4");
+		 * listaPalavras.removerPalavra("Palavra 2");
+		 * listaPalavras.exibirPalavrasUnicas();
+		 * System.out.println(listaPalavras.verificarPalavra("Palavra 4"));
+		 * System.out.println(listaPalavras.verificarPalavra("Palavra 6"));
+		 */
+
+		/*
+		 * AgendaContatos contatosAgenda = new AgendaContatos();
+		 * contatosAgenda.adicionarContato("Contato 1", 1234);
+		 * contatosAgenda.adicionarContato("Contato 2", 1234);
+		 * contatosAgenda.adicionarContato("Contato 3 - java", 1234);
+		 * contatosAgenda.adicionarContato("Contato 3 - java", 1234);
+		 * contatosAgenda.adicionarContato("Contato 3 - kotlin", 1234);
+		 * contatosAgenda.adicionarContato("Contato 4", 1234);
+		 * contatosAgenda.adicionarContato("Contato 3", 1111);
+		 * contatosAgenda.adicionarContato("Contato 5", 1234);
+		 * contatosAgenda.exibirContatos();
+		 * 
+		 * System.out.println(contatosAgenda.pesquisarPorNome("Contato 3"));
+		 * System.out.println(contatosAgenda.pesquisarPorNome("Contato 6"));
+		 * 
+		 * // Atualizando o número de um contato
+		 * contatosAgenda.atualizarNumeroContato("Contato 1", 111111111);
+		 * contatosAgenda.exibirContatos();
+		 */
 		
+		ListaTarefas tarefaLista = new ListaTarefas();
+		tarefaLista.adicionarTarefa("Tarefa 1");
+		tarefaLista.adicionarTarefa("Tarefa 2");
+		tarefaLista.adicionarTarefa("Tarefa 3");
+		tarefaLista.adicionarTarefa("Tarefa 4");
+		tarefaLista.adicionarTarefa("Tarefa 5"); 
+		tarefaLista.adicionarTarefa("Tarefa 5"); 
+		tarefaLista.adicionarTarefa("Tarefa 5"); 
+		System.out.println(tarefaLista.contarTarefas());
+		tarefaLista.exibirTarefas();
+		tarefaLista.removerTarefa("Tarefa 1");
+		tarefaLista.exibirTarefas();
+		System.out.println(tarefaLista.contarTarefas());
+		System.out.println(tarefaLista.obterTarefasConcluidas());
+		System.out.println(tarefaLista.obterTarefasPendentes());
+		tarefaLista.marcarTarefaConcluida("Tarefa 1");
+		tarefaLista.marcarTarefaConcluida("Tarefa 2");
+		tarefaLista.marcarTarefaConcluida("tarefa 3");
+		System.out.println(tarefaLista.obterTarefasConcluidas());
+		System.out.println(tarefaLista.obterTarefasPendentes());
+		tarefaLista.marcarTarefaPendente("tarefa 2");
+		System.out.println(tarefaLista.obterTarefasConcluidas());
+		System.out.println(tarefaLista.obterTarefasPendentes());
+		
+		
+
 	}
 
 }
