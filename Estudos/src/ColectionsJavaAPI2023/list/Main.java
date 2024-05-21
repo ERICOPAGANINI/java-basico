@@ -133,33 +133,31 @@ public class Main {
 		 * contatosAgenda.atualizarNumeroContato("Contato 1", 111111111);
 		 * contatosAgenda.exibirContatos();
 		 */
-		
-		ListaTarefas tarefaLista = new ListaTarefas();
-		tarefaLista.adicionarTarefa("Tarefa 1");
-		tarefaLista.adicionarTarefa("Tarefa 2");
-		tarefaLista.adicionarTarefa("Tarefa 3");
-		tarefaLista.adicionarTarefa("Tarefa 4");
-		tarefaLista.adicionarTarefa("Tarefa 5"); 
-		tarefaLista.adicionarTarefa("Tarefa 5"); 
-		tarefaLista.adicionarTarefa("Tarefa 5"); 
-		System.out.println(tarefaLista.contarTarefas());
-		tarefaLista.exibirTarefas();
-		tarefaLista.removerTarefa("Tarefa 1");
-		tarefaLista.exibirTarefas();
-		System.out.println(tarefaLista.contarTarefas());
-		System.out.println(tarefaLista.obterTarefasConcluidas());
-		System.out.println(tarefaLista.obterTarefasPendentes());
-		tarefaLista.marcarTarefaConcluida("Tarefa 1");
-		tarefaLista.marcarTarefaConcluida("Tarefa 2");
-		tarefaLista.marcarTarefaConcluida("tarefa 3");
-		System.out.println(tarefaLista.obterTarefasConcluidas());
-		System.out.println(tarefaLista.obterTarefasPendentes());
-		tarefaLista.marcarTarefaPendente("tarefa 2");
-		System.out.println(tarefaLista.obterTarefasConcluidas());
-		System.out.println(tarefaLista.obterTarefasPendentes());
-		
-		
 
+		/*
+		 * ListaTarefas tarefaLista = new ListaTarefas();
+		 * tarefaLista.adicionarTarefa("Tarefa 1");
+		 * tarefaLista.adicionarTarefa("Tarefa 2");
+		 * tarefaLista.adicionarTarefa("Tarefa 3");
+		 * tarefaLista.adicionarTarefa("Tarefa 4");
+		 * tarefaLista.adicionarTarefa("Tarefa 5");
+		 * tarefaLista.adicionarTarefa("Tarefa 5");
+		 * tarefaLista.adicionarTarefa("Tarefa 5");
+		 * System.out.println(tarefaLista.contarTarefas()); tarefaLista.exibirTarefas();
+		 * tarefaLista.removerTarefa("Tarefa 1"); tarefaLista.exibirTarefas();
+		 * System.out.println(tarefaLista.contarTarefas());
+		 * System.out.println(tarefaLista.obterTarefasConcluidas());
+		 * System.out.println(tarefaLista.obterTarefasPendentes());
+		 * tarefaLista.marcarTarefaConcluida("Tarefa 1");
+		 * tarefaLista.marcarTarefaConcluida("Tarefa 2");
+		 * tarefaLista.marcarTarefaConcluida("tarefa 3");
+		 * System.out.println(tarefaLista.obterTarefasConcluidas());
+		 * System.out.println(tarefaLista.obterTarefasPendentes());
+		 * tarefaLista.marcarTarefaPendente("tarefa 2");
+		 * System.out.println(tarefaLista.obterTarefasConcluidas());
+		 * System.out.println(tarefaLista.obterTarefasPendentes());
+		 */
+		
 	}
 
 }
