@@ -1,4 +1,4 @@
-package ColectionsJavaAPI2023.list;
+package ColectionsJavaAPI2023.set;
 
 import java.util.ArrayList;
 import java.util.List;
