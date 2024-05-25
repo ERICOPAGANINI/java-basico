@@ -37,23 +37,21 @@ public class AgendaEventos {
 		LocalDate proximaData = null;
 		Evento proximoEvento = null;
 		Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);
-		
+
 		for (Map.Entry<LocalDate, Evento> e : eventosTreeMap.entrySet()) {
 			LocalDate dataEvento = e.getKey();
 			if (dataEvento.isEqual(LocalDate.now()) || dataEvento.isAfter(LocalDate.now())) {
 				proximaData = dataEvento;
 				proximoEvento = e.getValue();
 				break;
-			}if(dataEvento.isAfter(LocalDate.now())) {
-				proximaData=dataEvento;
-				proximoEvento=e.getValue();
-				break;
 			}
+
 		}
 		if (proximoEvento != null) {
 			System.out.println(
 					"O proximo evento e: " + proximoEvento.getNomeEvento() + " acontecerá na data " + proximaData);
-		}else System.out.println("Não há eventos futuros na agenda.");
+		} else
+			System.out.println("Não há eventos futuros na agenda.");
 	}
 
 	public static void main(String[] args) {
